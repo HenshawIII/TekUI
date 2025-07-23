@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: "Transforming businesses with cutting-edge automation, AI integration, and custom software development.",
   openGraph: {
     title: "HIC_TECH | Technology Solutions",
-    description: "Transforming businesses with cutting-edge automation, AI integration, and custom software development.",
+    description: "Transforming businesses with cutting-edge automation, AI integration, and custom software development with a focus on customer satisfaction.",
     url: "https://hictech.com", // TODO: Replace with your real domain
     siteName: "HIC_TECH",
     images: [
