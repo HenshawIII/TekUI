@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoGuard | Intelligence & Recovery Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            opacity: 0.4;
+        }
+        .hero-overlay {
+            background: linear-gradient(135deg, rgba(0, 82, 212, 0.9) 0%, rgba(67, 100, 247, 0.8) 100%);
+        }
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .animated-bg {
+            animation: pulse 6s infinite ease-in-out;
+        }
+        @keyframes pulse {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .crypto-chip {
+            animation: float 6s ease-in-out infinite;
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body class="font-sans bg-white text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <i class="fas fa-shield-alt text-blue-600 text-3xl mr-2"></i>
+                        <span class="text-xl font-bold text-blue-600">CryptoGuard</span>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#services" class="text-blue-600 hover:text-blue-800 px-3 py-2 font-medium">Services</a>
+                        <a href="#about" class="text-gray-700 hover:text-blue-600 px-3 py-2 font-medium">About</a>
+                        <a href="#cases" class="text-gray-700 hover:text-blue-600 px-3 py-2 font-medium">Case Studies</a>
+                        <a href="#contact" class="text-gray-700 hover:text-blue-600 px-3 py-2 font-medium">Contact</a>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <a href="#contact" class="ml-8 inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700">
+                        Get Help Now
+                    </a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-blue-600 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#services" class="block px-3 py-2 text-base font-medium text-blue-600">Services</a>
+                <a href="#about" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600">About</a>
+                <a href="#cases" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600">Case Studies</a>
+                <a href="#contact" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600">Contact</a>
+                <a href="#contact" class="block px-3 py-2 text-base font-medium text-white bg-blue-600 rounded-md">
+                    Get Help Now
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Video Background -->
+    <section class="relative h-screen flex items-center justify-center overflow-hidden">
+        <video autoplay loop muted playsinline class="video-background">
+            <source src="https://assets.mixkit.co/videos/preview/mixkit-digital-animation-of-a-data-stream-41578-large.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        
+        <div class="hero-overlay absolute inset-0"></div>
+        
+        <div class="container mx-auto px-6 md:px-12 relative z-10 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+                Crypto Intelligence <br>& Recovery Solutions
+            </h1>
+            <p class="text-xl md:text-2xl text-blue-100 mb-10 max-w-3xl mx-auto">
+                Protecting your digital assets with cutting-edge blockchain forensics and recovery services.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#contact" class="px-8 py-4 bg-white text-blue-600 font-bold rounded-lg hover:bg-gray-100 transition duration-300 text-lg">
+                    Recover Your Funds
+                </a>
+                <a href="#services" class="px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-blue-700 hover:border-blue-700 transition duration-300 text-lg">
+                    Our Services
+                </a>
+            </div>
+            
+            <div class="mt-16 flex justify-center">
+                <div class="flex items-center space-x-8">
+                    <div class="text-white text-center">
+                        <div class="text-3xl font-bold">$250M+</div>
+                        <div class="text-blue-200">Recovered</div>
+                    </div>
+                    <div class="h-12 w-px bg-blue-300"></div>
+                    <div class="text-white text-center">
+                        <div class="text-3xl font-bold">98%</div>
+                        <div class="text-blue-200">Success Rate</div>
+                    </div>
+                    <div class="h-12 w-px bg-blue-300"></div>
+                    <div class="text-white text-center">
+                        <div class="text-3xl font-bold">24/7</div>
+                        <div class="text-blue-200">Support</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trusted By Section -->
+    <section class="py-12 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <p class="text-center text-gray-500 mb-8">TRUSTED BY LEADING COMPANIES WORLDWIDE</p>
+            <div class="flex flex-wrap justify-center items-center gap-12 md:gap-24">
+                <img src="https://via.placeholder.com/150x60/0052D4/FFFFFF?text=Binance" alt="Binance" class="h-12 opacity-70 hover:opacity-100 transition">
+                <img src="https://via.placeholder.com/150x60/0052D4/FFFFFF?text=Coinbase" alt="Coinbase" class="h-12 opacity-70 hover:opacity-100 transition">
+                <img src="https://via.placeholder.com/150x60/0052D4/FFFFFF?text=Kraken" alt="Kraken" class="h-12 opacity-70 hover:opacity-100 transition">
+                <img src="https://via.placeholder.com/150x60/0052D4/FFFFFF?text=Chainalysis" alt="Chainalysis" class="h-12 opacity-70 hover:opacity-100 transition">
+                <img src="https://via.placeholder.com/150x60/0052D4/FFFFFF?text=FTX" alt="FTX" class="h-12 opacity-70 hover:opacity-100 transition">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Crypto Intelligence Services</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Comprehensive solutions to protect, track, and recover your digital assets with unparalleled expertise.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="feature-card bg-white rounded-xl shadow-lg p-8 transition duration-500 ease-in-out">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-search-dollar text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Asset Recovery</h3>
+                    <p class="text-gray-600 mb-4">
+                        Our team specializes in tracing and recovering lost or stolen cryptocurrency through advanced blockchain forensics.
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-blue-500 mr-2"></i>
+                            <span>Wallet compromise recovery</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-blue-500 mr-2"></i>
+                            <span>Scam investigation</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-blue-500 mr-2"></i>
+                            <span>Exchange fraud recovery</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="feature-card bg-white rounded-xl shadow-lg p-8 transition duration-500 ease-in-out">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-chart-line text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Blockchain Intelligence</h3>
+                    <p class="text-gray-600 mb-4">
+                        Advanced analytics and monitoring to identify suspicious transactions and potential threats to your crypto assets.
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-blue-500 mr-2"></i>
+                            <span>Transaction monitoring</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-blue-500 mr-2"></i>
+                            <span>Risk assessment</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-blue-500 mr-2"></i>
+                            <span>Threat detection</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="feature-card bg-white rounded-xl shadow-lg p-8 transition duration-500 ease-in-out">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-lock text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Security Consulting</h3>
+                    <p class="text-gray-600 mb-4">
+                        Protect your crypto assets with our comprehensive security audits and best practice implementation.
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-blue-500 mr-2"></i>
+                            <span>Wallet security audits</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-blue-500 mr-2"></i>
+                            <span>Smart contract reviews</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-blue-500 mr-2"></i>
+                            <span>Security training</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-12 lg:mb-0 lg:pr-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">About CryptoGuard</h2>
+                    <div class="w-20 h-1 bg-blue-600 mb-6"></div>
+                    <p class="text-gray-600 mb-6 text-lg">
+                        Founded in 2017, CryptoGuard has emerged as a global leader in cryptocurrency intelligence and asset recovery. Our team combines decades of experience in cybersecurity, blockchain technology, and financial investigations.
+                    </p>
+                    <p class="text-gray-600 mb-8 text-lg">
+                        We've successfully recovered over $250 million in digital assets for individuals and institutions worldwide, maintaining an industry-leading success rate through our proprietary tracking methodologies.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <i class="fas fa-check-circle text-blue-500"></i>
+                            </div>
+                            <p class="ml-3 text-gray-700 font-medium">
+                                Certified blockchain forensic experts
+                            </p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <i class="fas fa-check-circle text-blue-500"></i>
+                            </div>
+                            <p class="ml-3 text-gray-700 font-medium">
+                                Partnerships with global law enforcement
+                            </p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <i class="fas fa-check-circle text-blue-500"></i>
+                            </div>
+                            <p class="ml-3 text-gray-700 font-medium">
+                                Proprietary tracking technology
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 relative">
+                    <div class="bg-blue-600 rounded-2xl overflow-hidden shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1639762681057-408e52192e55?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2232&q=80" alt="CryptoGuard Team" class="w-full h-auto opacity-90">
+                    </div>
+                    <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-lg z-10 hidden md:block">
+                        <div class="text-4xl font-bold text-blue-600">5+</div>
+                        <div class="text-gray-600">Years Experience</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies -->
+    <section id="cases" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Successful Recoveries</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Real cases where we've helped clients recover their digital assets.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Case 1 -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg">
+                    <div class="h-48 bg-blue-600 flex items-center justify-center">
+                        <i class="fas fa-wallet text-white text-6xl"></i>
+                    </div>
+                    <div class="p-8">
+                        <div class="uppercase tracking-wide text-sm text-blue-600 font-semibold mb-1">Wallet Hack</div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">$4.2M Recovery</h3>
+                        <p class="text-gray-600 mb-4">
+                            A high-net-worth individual's cold wallet was compromised through a sophisticated phishing attack.
+                        </p>
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 rounded-full p-2 mr-3">
+                                <i class="fas fa-check text-blue-600"></i>
+                            </div>
+                            <span class="text-gray-700 font-medium">100% funds recovered</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Case 2 -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg">
+                    <div class="h-48 bg-blue-600 flex items-center justify-center">
+                        <i class="fas fa-exchange-alt text-white text-6xl"></i>
+                    </div>
+                    <div class="p-8">
+                        <div class="uppercase tracking-wide text-sm text-blue-600 font-semibold mb-1">Exchange Fraud</div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">$12.8M Recovery</h3>
+                        <p class="text-gray-600 mb-4">
+                            A crypto exchange withheld client withdrawals during market volatility.
+                        </p>
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 rounded-full p-2 mr-3">
+                                <i class="fas fa-check text-blue-600"></i>
+                            </div>
+                            <span class="text-gray-700 font-medium">Legal action successful</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Case 3 -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg">
+                    <div class="h-48 bg-blue-600 flex items-center justify-center">
+                        <i class="fas fa-user-secret text-white text-6xl"></i>
+                    </div>
+                    <div class="p-8">
+                        <div class="uppercase tracking-wide text-sm text-blue-600 font-semibold mb-1">Romance Scam</div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">$750K Recovery</h3>
+                        <p class="text-gray-600 mb-4">
+                            A client was tricked into sending crypto to a fraudulent investment platform.
+                        </p>
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 rounded-full p-2 mr-3">
+                                <i class="fas fa-check text-blue-600"></i>
+                            </div>
+                            <span class="text-gray-700 font-medium">85% funds recovered</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-16">
+                <a href="#contact" class="inline-flex items-center px-8 py-4 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 transition duration-300 text-lg">
+                    Start Your Recovery Case
+                    <i class="fas fa-arrow-right ml-3"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Recovery Process</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    A proven methodology to maximize your chances of recovering lost funds.
+                </p>
+            </div>
+            
+            <div class="relative">
+                <!-- Timeline line -->
+                <div class="hidden md:block absolute left-1/2 h-full w-1 bg-blue-200 transform -translate-x-1/2"></div>
+                
+                <!-- Process Steps -->
+                <div class="space-y-12 md:space-y-0">
+                    <!-- Step 1 -->
+                    <div class="relative flex flex-col md:flex-row items-center md:even:flex-row-reverse">
+                        <div class="flex-shrink-0 w-16 h-16 rounded-full bg-blue-600 flex items-center justify-center text-white text-xl font-bold mb-4 md:mb-0 md:mx-8 relative z-10">
+                            1
+                        </div>
+                        <div class="flex-1 bg-white p-8 rounded-xl shadow-lg">
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">Initial Consultation</h3>
+                            <p class="text-gray-600">
+                                We'll review your case details to assess recovery potential and outline a strategy. All consultations are confidential.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 2 -->
+                    <div class="relative flex flex-col md:flex-row items-center md:even:flex-row-reverse">
+                        <div class="flex-shrink-0 w-16 h-16 rounded-full bg-blue-600 flex items-center justify-center text-white text-xl font-bold mb-4 md:mb-0 md:mx-8 relative z-10">
+                            2
+                        </div>
+                        <div class="flex-1 bg-white p-8 rounded-xl shadow-lg">
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">Blockchain Forensics</h3>
+                            <p class="text-gray-600">
+                                Our experts trace the transaction flow using proprietary tools to identify fund destinations and potential recovery paths.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 3 -->
+                    <div class="relative flex flex-col md:flex-row items-center md:even:flex-row-reverse">
+                        <div class="flex-shrink-0 w-16 h-16 rounded-full bg-blue-600 flex items-center justify-center text-white text-xl font-bold mb-4 md:mb-0 md:mx-8 relative z-10">
+                            3
+                        </div>
+                        <div class="flex-1 bg-white p-8 rounded-xl shadow-lg">
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">Legal Coordination</h3>
+                            <p class="text-gray-600">
+                                Where necessary, we work with our network of legal partners to initiate proceedings against bad actors.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 4 -->
+                    <div class="relative flex flex-col md:flex-row items-center md:even:flex-row-reverse">
+                        <div class="flex-shrink-0 w-16 h-16 rounded-full bg-blue-600 flex items-center justify-center text-white text-xl font-bold mb-4 md:mb-0 md:mx-8 relative z-10">
+                            4
+                        </div>
+                        <div class="flex-1 bg-white p-8 rounded-xl shadow-lg">
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">Asset Recovery</h3>
+                            <p class="text-gray-600">
+                                We execute the recovery plan, working with exchanges and custodians to secure and return your assets.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 bg-blue-600 text-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Client Testimonials</h2>
+                <div class="w-20 h-1 bg-white mx-auto mb-6"></div>
+                <p class="text-xl text-blue-100 max-w-3xl mx-auto">
+                    Hear from those who've successfully recovered their assets with our help.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white bg-opacity-10 rounded-xl p-8 backdrop-filter backdrop-blur-sm">
+                    <div class="flex items-center mb-6">
+                        <div class="flex-shrink-0">
+                            <img class="h-12 w-12 rounded-full" src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client">
+                        </div>
+                        <div class="ml-4">
+                            <div class="font-bold">Michael T.</div>
+                            <div class="text-blue-200">Recovered $320,000</div>
+                        </div>
+                    </div>
+                    <p class="italic">
+                        "After being scammed in a fake ICO, I thought my funds were gone forever. CryptoGuard not only traced the transactions but worked with authorities to recover 92% of my investment. Their expertise is unmatched."
+                    </p>
+                    <div class="mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white bg-opacity-10 rounded-xl p-8 backdrop-filter backdrop-blur-sm">
+                    <div class="flex items-center mb-6">
+                        <div class="flex-shrink-0">
+                            <img class="h-12 w-12 rounded-full" src="https://randomuser.me/api/portraits/women/44.jpg" alt="Client">
+                        </div>
+                        <div class="ml-4">
+                            <div class="font-bold">Sarah K.</div>
+                            <div class="text-blue-200">Recovered $1.2M</div>
+                        </div>
+                    </div>
+                    <p class="italic">
+                        "When our exchange account was hacked, CryptoGuard moved quickly to freeze the stolen funds across multiple exchanges. Their network and technical capabilities saved our business."
+                    </p>
+                    <div class="mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-white bg-opacity-10 rounded-xl p-8 backdrop-filter backdrop-blur-sm">
+                    <div class="flex items-center mb-6">
+                        <div class="flex-shrink-0">
+                            <img class="h-12 w-12 rounded-full" src="https://randomuser.me/api/portraits/men/75.jpg" alt="Client">
+                        </div>
+                        <div class="ml-4">
+                            <div class="font-bold">James L.</div>
+                            <div class="text-blue-200">Recovered $650,000</div>
+                        </div>
+                    </div>
+                    <p class="italic">
+                        "I fell victim to a sophisticated phishing attack. CryptoGuard's forensic team traced the funds through multiple mixers and decentralized exchanges. Their persistence paid off."
+                    </p>
+                    <div class="mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row">
+                <div class="lg:w-1/2 mb-12 lg:mb-0 lg:pr-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Contact Our Team</h2>
+                    <div class="w-20 h-1 bg-blue-600 mb-6"></div>
+                    <p class="text-gray-600 mb-8 text-lg">
+                        Ready to start your recovery process? Fill out the form or contact us directly. All inquiries are confidential.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <i class="fas fa-envelope text-blue-600 text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-bold text-gray-900">Email Us</h3>
+                                <p class="text-gray-600">help@cryptoguard.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <i class="fas fa-phone-alt text-blue-600 text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-bold text-gray-900">Call Us</h3>
+                                <p class="text-gray-600">+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <i class="fas fa-clock text-blue-600 text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-bold text-gray-900">Hours</h3>
+                                <p class="text-gray-600">24/7 Emergency Support Available</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-12">
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">Follow Us</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 hover:bg-blue-600 hover:text-white transition">
+                                <i class="fab fa-twitter text-xl"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 hover:bg-blue-600 hover:text-white transition">
+                                <i class="fab fa-linkedin-in text-xl"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 hover:bg-blue-600 hover:text-white transition">
+                                <i class="fab fa-telegram-plane text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <div class="bg-gray-50 rounded-xl shadow-lg p-8">
+                        <form id="contact-form">
+                            <div class="mb-6">
+                                <label for="name" class="block text-gray-700 font-medium mb-2">Full Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                                <input type="email" id="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number</label>
+                                <input type="tel" id="phone" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="case" class="block text-gray-700 font-medium mb-2">Case Type</label>
+                                <select id="case" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                                    <option value="">Select your case type</option>
+                                    <option value="hack">Wallet Hack</option>
+                                    <option value="scam">Investment Scam</option>
+                                    <option value="exchange">Exchange Issue</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="details" class="block text-gray-700 font-medium mb-2">Case Details</label>
+                                <textarea id="details" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"></textarea>
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="amount" class="block text-gray-700 font-medium mb-2">Approximate Amount Lost (USD)</label>
+                                <input type="number" id="amount" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                            </div>
+                            
+                            <button type="submit" class="w-full px-6 py-4 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 transition duration-300">
+                                Submit Case Review Request
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
+            </div>
+            
+            <div class="max-w-3xl mx-auto">
+                <div class="space-y-4">
+                    <!-- FAQ 1 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                        <button class="faq-toggle w-full flex justify-between items-center p-6 text-left">
+                            <h3 class="text-lg font-bold text-gray-900">What types of crypto losses can you recover?</h3>
+                            <i class="fas fa-chevron-down text-blue-600 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content px-6 pb-6 hidden">
+                            <p class="text-gray-600">
+                                We specialize in recovering funds from wallet hacks, exchange fraud, investment scams, romance scams, phishing attacks, and other forms of crypto theft. Our success rate varies by case type but averages 85-90% for cases we accept.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ 2 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                        <button class="faq-toggle w-full flex justify-between items-center p-6 text-left">
+                            <h3 class="text-lg font-bold text-gray-900">How long does the recovery process take?</h3>
+                            <i class="fas fa-chevron-down text-blue-600 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content px-6 pb-6 hidden">
+                            <p class="text-gray-600">
+                                Recovery timelines vary significantly based on case complexity. Simple cases may resolve in 2-4 weeks, while complex international recoveries can take 3-6 months. We provide regular updates throughout the process.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ 3 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                        <button class="faq-toggle w-full flex justify-between items-center p-6 text-left">
+                            <h3 class="text-lg font-bold text-gray-900">What information do I need to provide?</h3>
+                            <i class="fas fa-chevron-down text-blue-600 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content px-6 pb-6 hidden">
+                            <p class="text-gray-600">
+                                Helpful information includes: transaction hashes, wallet addresses involved, screenshots of communications, exchange account details (if applicable), and any other evidence of the incident. The more information you can provide, the better we can assess your case.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ 4 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                        <button class="faq-toggle w-full flex justify-between items-center p-6 text-left">
+                            <h3 class="text-lg font-bold text-gray-900">What are your fees?</h3>
+                            <i class="fas fa-chevron-down text-blue-600 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content px-6 pb-6 hidden">
+                            <p class="text-gray-600">
+                                We operate on a success-fee basis - you only pay if we successfully recover your funds. Our standard fee is 20% of recovered amounts, with no upfront costs. Complex cases may have different fee structures which we'll disclose before engagement.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ 5 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                        <button class="faq-toggle w-full flex justify-between items-center p-6 text-left">
+                            <h3 class="text-lg font-bold text-gray-900">Is my information kept confidential?</h3>
+                            <i class="fas fa-chevron-down text-blue-600 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content px-6 pb-6 hidden">
+                            <p class="text-gray-600">
+                                Absolutely. All client information is protected under strict confidentiality agreements. We never disclose client details without explicit permission, except where legally required in recovery proceedings.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-12">
+                    <a href="#contact" class="inline-flex items-center px-8 py-4 border-2 border-blue-600 text-blue-600 font-bold rounded-lg hover:bg-blue-600 hover:text-white transition duration-300 text-lg">
+                        Have More Questions?
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-16 bg-blue-600 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Stay Informed</h2>
+            <p class="text-xl text-blue-100 max-w-2xl mx-auto mb-8">
+                Subscribe to our newsletter for crypto security tips, scam alerts, and industry insights.
+            </p>
+            
+            <form class="max-w-md mx-auto flex flex-col sm:flex-row gap-2">
+                <input type="email" placeholder="Your email address" class="flex-grow px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-white text-gray-900">
+                <button type="submit" class="px-6 py-3 bg-white text-blue-600 font-bold rounded-lg hover:bg-gray-100 transition duration-300">
+                    Subscribe
+                </button>
+            </form>
+            
+            <p class="text-sm text-blue-200 mt-4">
+                We respect your privacy. Unsubscribe at any time.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+                <div>
+                    <div class="flex items-center mb-6">
+                        <i class="fas fa-shield-alt text-blue-400 text-3xl mr-2"></i>
+                        <span class="text-xl font-bold text-white">CryptoGuard</span>
+                    </div>
+                    <p class="text-gray-400 mb-6">
+                        World leaders in cryptocurrency intelligence and asset recovery services since 2017.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-telegram-plane"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-medium"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Services</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Asset Recovery</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Blockchain Forensics</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Security Audits</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Legal Support</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Wallet Security</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Resources</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Case Studies</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Scam Alerts</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Security Guides</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Contact</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-blue-400"></i>
+                            <span>123 Blockchain Ave, Crypto Valley, Switzerland</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone-alt mt-1 mr-3 text-blue-400"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-3 text-blue-400"></i>
+                            <span>help@cryptoguard.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">
+                    © 2023 CryptoGuard. All rights reserved.
+                </p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover:text-white">Disclosures</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-blue-600 text-white rounded-full shadow-lg flex items-center justify-center opacity-0 invisible transition-all duration-300">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // FAQ accordion
+        document.querySelectorAll('.faq-toggle').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('i');
+                
+                // Toggle content
+                content.classList.toggle('hidden');
+                
+                // Rotate icon
+                if (content.classList.contains('hidden')) {
+                    icon.classList.remove('transform', 'rotate-180');
+                } else {
+                    icon.classList.add('transform', 'rotate-180');
+                }
+                
+                // Close other open FAQs
+                document.querySelectorAll('.faq-toggle').forEach(otherButton => {
+                    if (otherButton !== button) {
+                        otherButton.nextElementSibling.classList.add('hidden');
+                        otherButton.querySelector('i').classList.remove('transform', 'rotate-180');
+                    }
+                });
+            });
+        });
+
+        // Back to top button
+        window.addEventListener('scroll', function() {
+            const backToTopButton = document.getElementById('back-to-top');
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('opacity-0', 'invisible');
+                backToTopButton.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopButton.classList.remove('opacity-100', 'visible');
+                backToTopButton.classList.add('opacity-0', 'invisible');
+            }
+        });
+
+        document.getElementById('back-to-top').addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Form submission
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your submission! Our team will contact you shortly.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
