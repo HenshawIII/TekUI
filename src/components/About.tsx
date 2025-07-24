@@ -8,10 +8,10 @@ export default function About() {
       <div className="container mx-auto px-6">
         <div className="flex flex-col lg:flex-row items-center">
           <div className="lg:w-1/2 mb-12 lg:mb-0 lg:pr-12">
-            <h2 className="text-3xl md:text-4xl  text-[#003169] mb-6">About <span className="text-3xl md:text-4xl font-bold text-[#003169]">HIC_TECH</span></h2>
+            <h2 className="text-3xl md:text-4xl  text-[#003169] mb-6">About <span className="text-3xl md:text-4xl font-bold text-[#003169]">HIC TECH</span></h2>
             <div className="w-20 h-1 bg-[#003169] mb-6"></div>
             <p className="text-gray-600 mb-6 text-lg">
-              Founded in 2020, HIC_TECH has emerged as a leading technology solutions provider specializing in business automation, website development, and AI integration. Our team combines expertise in modern web technologies, artificial intelligence, and business process optimization.
+              Founded in 2020, HIC TECH has emerged as a leading technology solutions provider specializing in business automation, website development, and AI integration. Our team combines expertise in modern web technologies, artificial intelligence, and business process optimization.
             </p>
             <p className="text-gray-600 mb-6 text-lg">
               We've successfully transformed hundreds of businesses worldwide, helping them automate processes, build stunning websites, and integrate AI solutions that drive growth and efficiency.
@@ -39,7 +39,7 @@ export default function About() {
               <div className="w-full h-96 bg-blue-600 rounded-lg overflow-hidden">
                 <Image
                   src="/offy.png"
-                  alt="HIC_TECH Team"
+                  alt="HIC TECH Team"
                   className="w-full h-full object-cover"
                   width={500}
                   height={500}
@@ -53,7 +53,7 @@ export default function About() {
               </div>
               <div className="absolute top-2 right-10 w-48 h-48 bg-transparent rounded-lg flex items-center justify-center">
                 <div className="text-center">
-                  <div className=" text-gray-400">HIC_TECH.com &copy; </div>
+                  <div className=" text-gray-400">HICTECH.com &copy; </div>
                 
                 </div>
               </div>

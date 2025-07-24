@@ -3,19 +3,19 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
-  title: "HIC_TECH | Technology Solutions",
+  title: "HIC TECH | Technology Solutions",
   description: "Transforming businesses with cutting-edge automation, AI integration, and custom software development.",
   openGraph: {
-    title: "HIC_TECH | Technology Solutions",
+    title: "HIC TECH | Technology Solutions",
     description: "Transforming businesses with cutting-edge automation, AI integration, and custom software development with a focus on customer satisfaction.",
     url: "https://hictech.com", // TODO: Replace with your real domain
-    siteName: "HIC_TECH",
+    siteName: "HIC TECH",
     images: [
       {
         url: "/favicon.png",
         width: 1200,
         height: 630,
-        alt: "HIC_TECH Logo",
+        alt: "HIC TECH Logo",
       },
     ],
     locale: "en_US",
@@ -23,14 +23,14 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "HIC_TECH | Technology Solutions",
+    title: "HIC TECH | Technology Solutions",
     description: "Transforming businesses with cutting-edge automation, AI integration, and custom software development.",
     site: "@hictech", // TODO: Replace with your Twitter handle
     creator: "@hictech", // TODO: Replace with your Twitter handle
     images: ["/favicon.png"],
   },
   alternates: {
-    canonical: "https://hictech.com", // TODO: Replace with your real domain
+    canonical: "https://tek-ui.vercel.app", // TODO: Replace with your real domain
   },
 };
 

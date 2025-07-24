@@ -17,7 +17,7 @@ export default function Blob() {
           <h2 className="text-4xl font-bold mb-6">Software</h2>
           <h3 className="text-3xl text-blue-400 font-semibold mb-8">Automate, Develop, and Integrate</h3>
           <p className="text-lg max-w-2xl mx-auto">
-          HIC_TECH uses cutting-edge development tools and automation software designed by experienced tech professionals, tailor-made for modern businesses, ensuring the most effective digital transformation.
+          HIC TECH uses cutting-edge development tools and automation software designed by experienced tech professionals, tailor-made for modern businesses, ensuring the most effective digital transformation.
           </p>
          <Link href={'/contact'}> <button className="bg-transparent hover:scale-110 mt-10  border-2 border-blue-400 text-blue-400 px-8 py-3 rounded-full hover:bg-blue-800 hover:text-white font-bold hover:bg-opacity-90 transition-all">
           Speak to an expert
@@ -39,7 +39,7 @@ export default function Blob() {
           <h2 className="text-4xl font-bold mb-6">Software</h2>
           <h3 className="text-3xl text-blue-400 font-semibold mb-8">Automate, Develop, and Integrate</h3>
           <p className="text-lg max-w-2xl mx-auto">
-          HIC_TECH uses cutting-edge development tools and automation software designed by experienced tech professionals, tailor-made for modern businesses, ensuring the most effective digital transformation.
+          HIC TECH uses cutting-edge development tools and automation software designed by experienced tech professionals, tailor-made for modern businesses, ensuring the most effective digital transformation.
           </p>
           <Link href="/contact"><button className="bg-transparent hover:scale-110 mt-10  border-2 border-blue-400 text-blue-400 px-8 py-3 rounded-full hover:bg-blue-800 hover:text-white font-bold hover:bg-opacity-90 transition-all">
           Speak to an expert

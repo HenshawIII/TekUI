@@ -117,7 +117,7 @@ export default function Navbar() {
             <div className="flex items-center">
               <Image src="/treqo2.png" alt="HIC_TECH" width={100} height={32} />
               <div className="flex flex-col text-gray-700">
-                <span className="text-xl font-bold leading-none">HIC_TECH</span>
+                <span className="text-xl font-bold leading-none">HIC TECH</span>
                 <span className="text-xl pl-1 font-bold leading-none">Solutions</span>
               </div>
             </div>

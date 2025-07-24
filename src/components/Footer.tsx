@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           {/* Company Info */}
           <div className="space-y-4">
-            <h3 className="text-2xl font-bold mb-4">HIC_TECH</h3>
+            <h3 className="text-2xl font-bold mb-4">HIC TECH</h3>
             <p className="text-gray-400">
               Leading the way in business automation, website development, and AI integration services worldwide.
             </p>
@@ -67,7 +67,7 @@ export default function Footer() {
           <div className="w-full relative h-[10vh] sm:mb-0 mb-32 md:h-[20vh] flex xl:items-end xl:justify-start items-start justify-center">
             <div className='flex flex-col xl:flex-row items-center justify-center gap-4'>
               <Image src={'/hicwhi.png'} alt='treqo' width={100} className='object-contain' height={100} />
-              <p className='text-3xl font-extrabold text-gray-400 text-nowrap'>HIC_TECH Solutions &copy;</p>
+              <p className='text-3xl font-extrabold text-gray-400 text-nowrap'>HIC TECH Solutions &copy;</p>
               <p className='text-gray-400'>{new Date().getFullYear()}, All rights reserved.</p>
             </div>
           </div>

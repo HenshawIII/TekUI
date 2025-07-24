@@ -28,10 +28,10 @@ export default function Contact() {
     if (phoneInput) phoneInput.value = phone;
     emailjs
       .sendForm(
-        'service_4krdzzr',      // Replace with your EmailJS service ID
-        'template_0bp585q',     // Replace with your EmailJS template ID
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || ''  ,      // Replace with your EmailJS service ID
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || '',     // Replace with your EmailJS template ID
         form.current,
-        '5z_1s3P0IPe-gdG7m'       // Replace with your EmailJS public key
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || ''
       )
       .then(
         (result) => {

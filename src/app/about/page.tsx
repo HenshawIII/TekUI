@@ -53,7 +53,7 @@ export default function AboutPage() {
               We are a team of dedicated professionals specializing in business automation, website development, and AI integration. Our mission is to help businesses transform their operations through advanced technology solutions and strategic digital transformation.
             </p>
             <p className='text-xl text-gray-200 mt-2'>
-            HIC_TECH was founded by Technology Experts, Software Developers, AI Specialists and Digital Transformation Consultants. With over 4 years of experience in these fields individually they came together to form a boutique Technology Solutions Group focused on delivering results.
+            HIC TECH was founded by Technology Experts, Software Developers, AI Specialists and Digital Transformation Consultants. With over 4 years of experience in these fields individually they came together to form a boutique Technology Solutions Group focused on delivering results.
             </p>
           </div>
         </div>

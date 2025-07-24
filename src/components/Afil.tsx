@@ -6,7 +6,7 @@ export default function Afil() {
       <div className='flex flex-col items-center justify-center text-center'>
         <Image src={'/Hick.png'} alt='treqo' width={500} className='object-contain' height={500} />
         <div className="mt-4">
-          <p className='text-3xl font-extrabold text-gray-700 text-nowrap'>HIC_TECH Solutions &copy;</p>
+          <p className='text-3xl font-extrabold text-gray-700 text-nowrap'>HIC TECH Solutions &copy;</p>
         </div>
       </div>
     </div>

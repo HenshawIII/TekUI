@@ -87,7 +87,7 @@ export default function Hero() {
       <div className="container mx-auto px-6 md:px-12 relative z-10 text-center">
         <div className="w-full flex justify-center items-center">
         <BlurText
-    text="HIC_TECH"
+    text="HIC TECH"
     delay={150}
     animateBy="letters"
     direction="top"
